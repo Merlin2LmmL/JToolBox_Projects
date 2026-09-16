@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PKW
+comment0.text=\r\n\ Combi\ von\ HAR\r\n
+comment1.params=_bezeichnung\ _farbe\ _ps\ xPos\ yPos
+comment1.target=PKW(java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Auto\r\n
+comment2.params=neuesX\ neuesY
+comment2.target=void\ setzePosition(int,\ int)
+comment3.params=entfernung
+comment3.target=void\ fahren(int)
+numComments=4
