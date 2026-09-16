@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tilesheet
+comment1.params=filename\ tileWidth\ tileHeight\ targetWidth\ targetHeight
+comment1.target=Tilesheet(java.lang.String,\ int,\ int,\ int,\ int)
+comment1.text=\n\ Konstruktor\n\ @param\ filename\ Dateiname\ des\ Tilesheets\n\ @param\ tileWidth\ Urspr\u00FCngliche\ Breite\ eines\ Tiles\ im\ Tilesheet\n\ @param\ tileHeight\ Urspr\u00FCngliche\ H\u00F6he\ eines\ Tiles\ im\ Tilesheet\n\ @param\ targetWidth\ Zielbreite,\ auf\ die\ das\ Tile\ skaliert\ werden\ soll\n\ @param\ targetHeight\ Zielh\u00F6he,\ auf\ die\ das\ Tile\ skaliert\ werden\ soll\n
+comment2.params=row\ col
+comment2.target=Bild\ getTile(int,\ int)
+comment2.text=\n\ Liefert\ ein\ bestimmtes\ Tile\ als\ neues\ Bild-Objekt\ (kopiert)\n\ @param\ row\ Zeile\n\ @param\ col\ Spalte\n\ @return\ Ein\ Bild-Objekt\ des\ angeforderten\ Tiles\n
+comment3.params=
+comment3.target=int\ getRows()
+comment4.params=
+comment4.target=int\ getCols()
+numComments=5

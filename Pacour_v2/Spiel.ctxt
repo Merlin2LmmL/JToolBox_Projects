@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Spiel
+comment1.params=level
+comment1.target=Spiel(int)
+comment1.text=\n\ Level-Auswahl\ Konstruktors\n\ \n\ @param\ level\ \ \ \ \ W\u00E4hle\ das\ Level\ aus,\ dass\ du\ spielen\ m\u00F6chtest\!\n\ \n\ Hinweis\:\ Bis\ jetzt\ gibt\ es\ 2\ Level.\n
+numComments=2

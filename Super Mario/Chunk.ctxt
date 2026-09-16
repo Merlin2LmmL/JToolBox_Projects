@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Chunk
+comment1.params=width\ height
+comment1.target=Chunk(int,\ int)
+comment2.params=x\ y\ block
+comment2.target=void\ setBlock(int,\ int,\ Block)
+comment3.params=
+comment3.target=Block[][]\ getBlock()
+comment4.params=offsetX\ offsetY
+comment4.target=void\ render(int,\ int)
+comment4.text=\n\ Rendert\ alle\ Bl\u00F6cke\ dieses\ Chunks.\n\ @param\ g\ Das\ Graphics-Objekt.\n\ @param\ offsetX\ Globaler\ X-Versatz\ in\ Pixeln.\n\ @param\ offsetY\ Globaler\ Y-Versatz\ in\ Pixeln.\n\ @param\ tileSize\ Die\ Gr\u00F6\u00DFe\ eines\ Tiles\ in\ Pixeln.\n
+numComments=5

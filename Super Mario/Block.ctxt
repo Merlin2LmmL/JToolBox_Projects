@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Block
+comment1.params=x\ y\ blockID
+comment1.target=Block(int,\ int,\ int)
+comment2.params=offsetX\ offsetY
+comment2.target=void\ render(int,\ int)
+comment2.text=\n\ Aktualisiert\ die\ sichtbare\ Position\ des\ Blocks\ basierend\ auf\ dem\ Welt-Offset.\n
+numComments=3

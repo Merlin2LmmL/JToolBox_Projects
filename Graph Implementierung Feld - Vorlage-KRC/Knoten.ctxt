@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Knoten
+comment0.text=\n\ Implementierung\ mit\ knotenFeld\ (Array)\n\ \n\ @author\ Stoeckle\ \n\ @version\ 16.11.22\n
+comment1.params=schluessel
+comment1.target=Knoten(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ gibSchluessel()
+comment3.params=
+comment3.target=void\ schluesselAusgeben()
+comment4.params=
+comment4.target=boolean\ istBesucht()
+comment5.params=wert
+comment5.target=void\ setzeBesucht(boolean)
+numComments=6

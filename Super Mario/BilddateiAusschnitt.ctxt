@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BilddateiAusschnitt
+comment0.text=\n\ BilddateiAusschnitt\:\n\ \ -\ Erzeugt\ ein\ JToolbox-kompatibles\ "Bilddatei"-Objekt\ direkt\ aus\n\ \ \ \ einem\ BufferedImage\ (z.B.\ Subimage\ eines\ gro\u00DFen\ Sheets).\n
+comment1.params=sub
+comment1.target=BilddateiAusschnitt(java.awt.image.BufferedImage)
+comment1.text=\n\ Konstruktor\:\ Nimmt\ ein\ bereits\ ausgeschnittenes\ BufferedImage\n
+comment2.params=
+comment2.target=java.awt.image.BufferedImage\ leseBild()
+numComments=3

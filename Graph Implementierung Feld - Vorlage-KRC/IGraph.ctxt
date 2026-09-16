@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=IKnoten[]\ leseKnotenArray()
+comment1.params=
+comment1.target=int\ leseAnzahlKnoten()
+comment2.params=
+comment2.target=int[][]\ leseKantenMatrix()
+comment3.params=
+comment3.target=java.awt.Color[][]\ leseFarbKantenMatrix()
+comment4.params=
+comment4.target=java.lang.String\ leseInfo()
+numComments=5

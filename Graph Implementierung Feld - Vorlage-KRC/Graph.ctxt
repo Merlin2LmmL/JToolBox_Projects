@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Graph
+comment1.params=maxAnzahlKnoten
+comment1.target=Graph(int)
+comment2.params=knotenSchluessel
+comment2.target=int\ gibIndex(java.lang.String)
+comment2.text=\ \n\ Hilfsmethode\ knotenIndex(String\ suchSchluessel)\n\ Gibt\ den\ Index\ zu\ einem\ Knoten\ mit\ einem\ bestimmten\ Schl\u00FCssel\ im\ knotenFeld\n
+comment3.params=schluessel
+comment3.target=void\ knotenHinzufuegen(java.lang.String)
+comment3.text=\ \n\ Einen\ Knoten\ hinzufuegen\n\ f\u00FCgt\ dem\ Graphen\ einen\ Knoten\ hinzu\n
+comment4.params=startSchluessel\ zielSchluessel\ bewertung
+comment4.target=void\ kanteHinzufuegen(java.lang.String,\ java.lang.String,\ int)
+comment4.text=\ \n\ Eine\ Kante\ hinzufuegen\ \n\ F\u00FCgt\ dem\ UNGERICHTETEN\ Graphen\ eine\ Kante\ hinzu\ (Adjazenzmatrix\ symmetrisch)\n
+comment5.params=
+comment5.target=void\ knotenAusgeben()
+comment5.text=\n\ Ausgabe\ und\ Darstellung\n
+comment6.params=
+comment6.target=void\ matrixAusgeben()
+comment7.params=startSchluessel\ zielSchluessel
+comment7.target=void\ sucheRoute(java.lang.String,\ java.lang.String)
+comment8.params=startSchluessel\ zielSchluessel
+comment8.target=void\ sucheKuerzestenPfad(java.lang.String,\ java.lang.String)
+comment9.params=startSchluessel\ zielSchluessel
+comment9.target=int\ bewertungAusgeben(java.lang.String,\ java.lang.String)
+numComments=10

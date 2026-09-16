@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Start
+comment1.params=graphNr
+comment1.target=Start(int)
+comment2.params=
+comment2.target=Graph\ getGraph()
+numComments=3

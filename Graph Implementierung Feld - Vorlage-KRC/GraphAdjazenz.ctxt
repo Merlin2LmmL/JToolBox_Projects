@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ MitKantenGewicht()
+comment1.params=graph
+comment1.target=GraphAdjazenz(IGraph)
+comment2.params=delay
+comment2.target=void\ repeat(int)
+comment3.params=arg0
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=graph
+comment4.target=void\ zeigeGraph(IGraph)
+comment5.params=
+comment5.target=void\ loescheGraph()
+comment6.params=
+comment6.target=void\ aktualisieren()
+comment7.params=breite\ hoehe
+comment7.target=void\ groesseAendern(int,\ int)
+comment8.params=g
+comment8.target=void\ paintComponent(java.awt.Graphics)
+comment9.params=g2
+comment9.target=void\ zeichneAdjazenzGraph(java.awt.Graphics2D)
+numComments=10

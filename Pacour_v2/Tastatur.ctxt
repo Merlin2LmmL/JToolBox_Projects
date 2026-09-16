@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Tastatur
+comment1.params=
+comment1.target=Tastatur()
+comment2.params=link
+comment2.target=void\ setzeLink(ITastatur)
+comment3.params=c
+comment3.target=void\ meldeAnTaste(char)
+comment4.params=taste
+comment4.target=void\ meldeAnTaste(java.lang.String)
+comment5.params=
+comment5.target=void\ meldeRichtungstastenAn()
+comment6.params=rueckgabe
+comment6.target=void\ rueckgabe(java.lang.String)
+comment7.params=original
+comment7.target=java.lang.String\ mappedTaste(java.lang.String)
+comment8.params=
+comment8.target=void\ meldeStandardtastenAn()
+numComments=9

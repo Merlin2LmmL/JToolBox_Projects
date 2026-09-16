@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Steuerung
+comment0.text=\n\ Die\ Klasse\ Steuerung\ erstellt\ in\ BlueJ\ eine\ Spielfl\u00E4che\ (Flaeche)\ und\ einen\ Schieberegler\ (Schieberegler),\n\ der\ bestimmt,\ wie\ oft\ pro\ Sekunde\ die\ Methode\ vermehren()\ aufgerufen\ werden\ soll.\n\ \n\ Hierbei\ wird\:\n\ -\ Ein\ Spielfeld\ (10x10\ Felder,\ Feldgr\u00F6\u00DFe\ 20)\ erzeugt,\n\ -\ Ein\ Schieberegler\ im\ Bereich\ 0\ bis\ 100\ eingesetzt\ (0\ bewirkt\ einen\ Stopp\ der\ Aufrufe),\n\ -\ Ein\ Taktgeber\ verwendet,\ der\ die\ methode\ vermehren()\ in\ regelm\u00E4\u00DFigen\ Abst\u00E4nden\ aufruft.\n\ \n\ Die\ Klasse\ implementiert\ ITuWas,\ um\ als\ Callback\ sowohl\ f\u00FCr\ den\ Schieberegler\ als\ auch\ den\ Taktgeber\ zu\ dienen.\n
+comment1.params=breite\ hoehe\ groesse
+comment1.target=Steuerung(int,\ int,\ int)
+comment1.text=\n\ Konstruktor\:\ Erstellt\ das\ Spielfeld,\ den\ Schieberegler\ und\ den\ Taktgeber.\n
+comment2.params=id
+comment2.target=void\ tuWas(int)
+comment2.text=\n\ ITuWas\ Callback-Methode.\n\ Je\ nach\ \u00FCbergebener\ ID\ unterscheiden\ wir\:\n\ -\ ID\ 0\:\ Der\ Schieberegler\ hat\ sich\ ver\u00E4ndert.\ Dann\ wird\ die\ Aufruffrequenz\ (Taktgeberperiode)\ \n\ \ \ \ \ \ \ \ \ neu\ berechnet.\n\ -\ ID\ 1\:\ Der\ Taktgeber\ hat\ ein\ Taktsignal\ ausgel\u00F6st\ und\ es\ folgt\ ein\ Simulationsschritt,\n\ \ \ \ \ \ \ \ \ d.h.\ spielfeld.vermehren()\ wird\ aufgerufen.\n
+comment3.params=
+comment3.target=void\ updateTaktgeber()
+comment3.text=\n\ Lest\ den\ aktuellen\ Wert\ des\ Schiebereglers\ und\ passt\ die\ Timer-Periode\ entsprechend\ an.\n\ -\ Ist\ der\ Frequenzwert\ 0,\ wird\ der\ Taktgeber\ angehalten.\n\ -\ Andernfalls\ wird\ die\ Periode\ (in\ Millisekunden)\ als\ 1000\ /\ Frequenz\ berechnet\n\ \ \ und\ der\ Taktgeber\ auf\ "endlos"\ (wiederholend)\ gestellt.\n
+comment4.params=zufallswert
+comment4.target=void\ zufall(double)
+numComments=5

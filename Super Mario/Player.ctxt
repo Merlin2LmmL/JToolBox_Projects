@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Player
+comment1.params=startX\ startY
+comment1.target=Player(int,\ int)
+comment2.params=dx\ dy
+comment2.target=void\ bewege(int,\ int)
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=
+comment5.target=void\ update()
+numComments=6

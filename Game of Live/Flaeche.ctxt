@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Flaeche
+comment1.params=hoehe\ breite\ groesse
+comment1.target=Flaeche(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ vermehren()
+comment3.params=zustand
+comment3.target=boolean\ isOriginallyLive(java.lang.String)
+comment3.text=\n\ Hilfsmethode,\ um\ den\ urspr\u00FCnglichen\ Zustand\ zu\ ermitteln.\n\ Zust\u00E4nde\ "schwarz"\ und\ "schwarz->weiss"\ werden\ als\ urspr\u00FCnglich\ lebendig\ betrachtet.\n\ \n\ @param\ zustand\ Der\ aktuelle\ Wert\ von\ felder[x][y].farbe\n\ @return\ true,\ wenn\ die\ Zelle\ urspr\u00FCnglich\ lebendig\ war,\ sonst\ false.\n
+comment4.params=zufallswert
+comment4.target=void\ zufall(double)
+numComments=5

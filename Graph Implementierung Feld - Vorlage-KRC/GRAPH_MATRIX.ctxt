@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=maxAnzahlKnoten
+comment0.target=GRAPH_MATRIX(int)
+comment1.params=
+comment1.target=void\ knotenAusgeben()
+comment2.params=
+comment2.target=void\ matrixAusgeben()
+comment3.params=startKnotenNr
+comment3.target=void\ tiefensucheStarten(int)
+comment3.text=\r\n\ Tiefensuche\ als\ Verfahren\ zum\ Graphendurchlauf\r\n\ Rekursives\ Verfahren\r\n
+comment4.params=knotenNr
+comment4.target=void\ tiefensucheDurchfuehren(int)
+comment5.params=start\ ziel\ bewertung
+comment5.target=void\ kanteHinzufuegen(int,\ int,\ int)
+comment5.text=\r\n\ Hinzufuegen\ und\ Loeschen\ von\ Knoten\ bzw.\ Kanten\r\n
+comment6.params=start\ ziel
+comment6.target=void\ kanteLoeschen(int,\ int)
+comment7.params=inhalt
+comment7.target=int\ knotenHinzufuegen(DATENELEMENT)
+comment8.params=knotenIndex
+comment8.target=void\ knotenLoeschen(int)
+numComments=9

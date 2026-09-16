@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Bilddatei
+comment0.text=\n\ <h1>Bilddatei</h1>.<br\ />\ \n\ Ein\ mehrfach\ benoetigtes\ Bild\ wird\ nur\ einmal\ aus\ der\ Datei\ gelesen.\ Es\ kann\ kann\ an\ mehrere\ Bild-Klassen\ \ \n\ zum\ Anzeigen\ uebergeben\ werden.\ <br/>\n\ Uebergabe\ im\ Bild-Konstruktor\ oder\ durch\ die\ Methode\ wechsleBild<br\ />\n\n\ Vorteil\:\ <br>\n\ -\ Ein\ Bild\ kann\ mehreren\ Bildkomponenten\ zur\ Verfuegung\ gestellt\ werden.<br>\n\ -\ Methoden\ wie\ Einpassen\ in\ einen\ Rahmen\ geschehen\ bereits\ beim\ Einlesen\ <br>\n\ @author\ Hans\ Witt\n\n\ @version\ 1\ (2.5.09)\n\n
+comment1.params=
+comment1.target=Bilddatei()
+comment2.params=neueBreite\ neueHoehe
+comment2.target=Bilddatei(int,\ int)
+comment3.params=filename
+comment3.target=Bilddatei(java.lang.String)
+comment4.params=filename\ neueBreite\ neueHoehe
+comment4.target=Bilddatei(java.lang.String,\ int,\ int)
+comment5.params=neueBreite\ neueHoehe
+comment5.target=void\ einpassen(int,\ int)
+comment6.params=
+comment6.target=void\ erzeugeLeeresBild()
+comment7.params=filename
+comment7.target=void\ leseBildDatei(java.lang.String)
+comment7.text=\n\ Waehle\ das\ Bild\ aus\!\n
+comment8.params=
+comment8.target=java.awt.image.BufferedImage\ leseBild()
+comment8.text=\n\ liefert\ das\ Bild\ an\ eine\ andere\ Komponente\n
+numComments=9

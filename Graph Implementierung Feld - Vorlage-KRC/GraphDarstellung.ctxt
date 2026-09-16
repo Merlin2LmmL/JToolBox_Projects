@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ MitKantenGewicht()
+comment1.params=graph\ mitKantengewicht
+comment1.target=GraphDarstellung(IGraph,\ boolean)
+comment10.params=g
+comment10.target=void\ paintComponent(java.awt.Graphics)
+comment11.params=g2
+comment11.target=void\ zeichneGraph(java.awt.Graphics2D)
+comment2.params=delay
+comment2.target=void\ repeat(int)
+comment3.params=arg0
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=graph
+comment4.target=void\ zeigeGraph(IGraph)
+comment5.params=
+comment5.target=void\ loescheGraph()
+comment6.params=millisekunden
+comment6.target=void\ warten(int)
+comment7.params=millisekunden
+comment7.target=void\ aktualisieren(int)
+comment8.params=
+comment8.target=void\ aktualisieren()
+comment9.params=breite\ hoehe
+comment9.target=void\ groesseAendern(int,\ int)
+numComments=12
