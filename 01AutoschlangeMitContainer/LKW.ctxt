@@ -1,0 +1,16 @@
+#BlueJ class context
+#Wed Sep 30 08:43:06 CEST 2026
+comment0.target=LKW
+comment0.text=\n Der wagen von Minh Hoang \n
+comment1.params=_bezeichnung _ps xPos yPos
+comment1.target=LKW(java.lang.String, int, int, int)
+comment1.text=\n Konstruktor f\u00FCr Objekte der Klasse Auto\n
+comment2.params=xPos yPos
+comment2.target=LKW(int, int)
+comment3.target=LKW()
+comment4.target=void zeichnen()
+comment5.params=neuesX neuesY
+comment5.target=void setzePosition(int, int)
+comment6.params=entfernung
+comment6.target=void fahren(int)
+numComments=7

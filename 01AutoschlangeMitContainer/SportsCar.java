@@ -1,4 +1,5 @@
 import java.awt.Color;
+
 /**
  * A Formula One car design by
  *
@@ -6,13 +7,11 @@ import java.awt.Color;
  * 
  * template by
  * @coauther K. Hartmann
- * @version 0.0.2
+ * @version 1.0.5
  */
 
-public class sportsCar {
-    private String name, typ, color;
+public class SportsCar extends Kraftfahrzeug {
     private Linie wheelLineRight1, wheelLineRight2, wheelLineRight3, wheelLineLeft1, wheelLineLeft2, wheelLineLeft3, halo_upper, halo_lower;
-    private Rechteck bounding_box;
     private Kreis wheelLeft, wheelRight, helmet;
     private Dreieck frontWing, spoilerUpper, rearRoof;
     private Rechteck frontWingLower, spoilerLower, body, bodyFront, helmetVisor;
@@ -21,19 +20,35 @@ public class sportsCar {
     private int wheelDegrees;
     private int scale;
 
+    private final String lightToneName, darkToneName, helmetToneName;
+
+    // Gives every instance its own StaticTools color-name namespace,
+    // so two cars on the field never overwrite each other's colors.
+    private static int instanceCounter = 0;
+
     /**
      * @param _name the name of the car
      * @param xPos the inital x position
      * @param yPos the inital y position
-     * @param _color the car's color
+     * @param ps the car's horsepower
+     * @param baseColor the car's base color (a StaticTools color name)
      * @param _animateWheels weather wheel animation is enabled
      * @param _scale the scale factor of the car
      */
-    public sportsCar(String _name, int xPos, int yPos, String _color, boolean _animateWheels, int _scale) {
-        name = _name;
-        color = _color;
+    public SportsCar(String _name, int xPos, int yPos, int ps, String baseColor, boolean _animateWheels, int _scale) {
+        super(_name, ps, xPos, yPos);
         animateWheels = _animateWheels;
         scale = _scale;
+
+        int id = instanceCounter++;
+        lightToneName  = "lightTone"  + id;
+        darkToneName   = "darkTone"   + id;
+        helmetToneName = "helmetTone" + id;
+
+        Color base = StaticTools.getColor(baseColor);
+        StaticTools.setzeFarbe(lightToneName, adjustColor(base, 40, 40, 40));
+        StaticTools.setzeFarbe(darkToneName, adjustColor(base, -30, -30, -30));
+        StaticTools.setzeFarbe(helmetToneName, getHelmetColor(base));
 
         car = new Behaelter(
             xPos * scale,
@@ -41,17 +56,7 @@ public class sportsCar {
             140  * scale,
             100  * scale
         );
-        /*
-        // Debugging. Showing us the zone, the car has to fill
-        bounding_box = new Rechteck(
-        car,
-        0   * scale,
-        0   * scale,
-        140 * scale,
-        100 * scale
-        );
-        bounding_box.setzeFarbe("grau");
-         */
+
         spoilerUpper = new Dreieck(
             car,
             0  * scale,
@@ -63,26 +68,7 @@ public class sportsCar {
         // intermediate cardinal directions (yes, i did
         // just google that) makes a right-angled triangle
         spoilerUpper.setzeAusrichtung("SW");
-        spoilerUpper.setzeFarbe(color);
-
-        spoilerLower = new Rechteck(
-            car,
-            8  * scale,
-            70 * scale,
-            10 * scale,
-            20 * scale
-        );
-        spoilerLower.setzeFarbe(color);
-
-        rearRoof = new Dreieck(
-            car,
-            8  * scale,
-            55 * scale,
-            42 * scale,
-            26 * scale
-        );
-        rearRoof.setzeAusrichtung("SO");
-        rearRoof.setzeFarbe(color);
+        spoilerUpper.setzeFarbe(darkToneName);
 
         helmet = new Kreis(
             car,
@@ -90,7 +76,7 @@ public class sportsCar {
             64 * scale,
             5  * scale
         );
-        helmet.setzeFarbe("orange");
+        helmet.setzeFarbe(helmetToneName);
 
         helmetVisor = new Rechteck(
             car,
@@ -101,23 +87,53 @@ public class sportsCar {
         );
         helmetVisor.setzeFarbe("schwarz");
 
-        body = new Rechteck(
+        halo_lower = new Linie(
             car,
-            16 * scale,
-            74 * scale,
-            50 * scale,
-            16 * scale
+            65 * scale,
+            60 * scale,
+            80 * scale,
+            75 * scale
         );
-        body.setzeFarbe(color);
+        halo_lower.setzeLinienDicke(2 * scale);
+        halo_lower.setzeFarbe(darkToneName);
 
-        bodyFront = new Rechteck(
+        halo_upper = new Linie(
             car,
-            64 * scale,
-            72 * scale,
-            30 * scale,
-            15 * scale
+            45 * scale,
+            60 * scale,
+            65 * scale,
+            60 * scale
         );
-        bodyFront.setzeFarbe(color);
+        halo_upper.setzeLinienDicke(2 * scale);
+        halo_upper.setzeFarbe(darkToneName);
+
+        rearRoof = new Dreieck(
+            car,
+            8  * scale,
+            55 * scale,
+            42 * scale,
+            26 * scale
+        );
+        rearRoof.setzeAusrichtung("SO");
+        rearRoof.setzeFarbe(baseColor);
+
+        spoilerLower = new Rechteck(
+            car,
+            8  * scale,
+            70 * scale,
+            10 * scale,
+            20 * scale
+        );
+        spoilerLower.setzeFarbe(darkToneName);
+
+        frontWingLower = new Rechteck(
+            car,
+            52 * scale,
+            83 * scale,
+            80 * scale,
+            7  * scale
+        );
+        frontWingLower.setzeFarbe(lightToneName);
 
         frontWing = new Dreieck(
             car,
@@ -127,16 +143,25 @@ public class sportsCar {
             14 * scale
         );
         frontWing.setzeAusrichtung("SW");
-        frontWing.setzeFarbe(color);
+        frontWing.setzeFarbe(lightToneName);
 
-        frontWingLower = new Rechteck(
+        body = new Rechteck(
             car,
-            52 * scale,
-            83 * scale,
-            80 * scale,
-            7  * scale
+            16 * scale,
+            74 * scale,
+            50 * scale,
+            16 * scale
         );
-        frontWingLower.setzeFarbe(color);
+        body.setzeFarbe(baseColor);
+
+        bodyFront = new Rechteck(
+            car,
+            64 * scale,
+            72 * scale,
+            30 * scale,
+            18 * scale
+        );
+        bodyFront.setzeFarbe(baseColor);
 
         wheelLeft = new Kreis(
             car,
@@ -153,26 +178,6 @@ public class sportsCar {
             9  * scale
         );
         wheelRight.setzeFarbe("schwarz");
-
-        halo_lower = new Linie(
-            car,
-            65 * scale,
-            60 * scale,
-            80 * scale,
-            75 * scale
-        );
-        halo_lower.setzeLinienDicke(2 * scale);
-        halo_lower.setzeFarbe(color);
-
-        halo_upper = new Linie(
-            car,
-            45 * scale,
-            60 * scale,
-            65 * scale,
-            60 * scale
-        );
-        halo_upper.setzeLinienDicke(2 * scale);
-        halo_upper.setzeFarbe(color);
 
         if (animateWheels) {
             wheelLineRight1 = new Linie(car);
@@ -204,36 +209,47 @@ public class sportsCar {
             // no start- and endpoints were set
             updateWheelAnimation();
         }
-        
+
         // We dont need to call Behaelter.hinzufuegen(),
         // because you can already attach
         // the objects when initalizing them
     }
 
-    private static final String[] COLORS = {"rot", "blau", "gelb", "gruen", "lila", "magenta", "cyan"};
-    
     /**
-     * Creates a quick, random colored instance of the car
+     * Creates a quick, random baseColored instance of the car
      */
-    public sportsCar() {
-        this("Car", 0, 0, COLORS[(int) (Math.random() * COLORS.length)], true, 1);
+    public SportsCar() {
+        this("Car", 0, 0, 800, getRandomBaseColor(), true, 1);
     }
 
+    /**
+     * Constructor for @K. Hartmann
+     * 
+     * Spawn random baseColored car with set start position.
+     * 
+     * @param startX Initial x position
+     * @param startY Initial y position
+     */
+    public SportsCar(int startX, int startY) {
+        this("Car", startX, startY, 800, getRandomBaseColor(), true, 1);
+    }
+
+    @Override
     public void setzePosition(int neuesX, int neuesY) {
+        super.setzePosition(neuesX, neuesY); // keeps inherited x, y in sync
         car.xPos = neuesX;
-        car.yPos = neuesY;
+        car.yPos = neuesY;  
         car.setzePosition(car.xPos, car.yPos);
     }
 
+    @Override
     public void fahren(int entfernung) {
         // Extracted from Behaelter.langsamHorizontalBewegen()
         // and Behaelter.horizontalBewegen()
-        int delta;
+        int delta = 1 * Math.abs(scale);
         if (entfernung < 0) {
-            delta = -1 * Math.abs(scale);
+            delta = -delta;
             entfernung = -entfernung;
-        } else {
-            delta = 1;
         }
 
         for (int i = 0; i < entfernung; i++) {
@@ -244,6 +260,43 @@ public class sportsCar {
             }
             StaticTools.warte(10);
         }
+
+        // keep inherited x in sync with the actual on-screen position
+        x = car.xPos;
+        y = car.yPos;
+    }
+
+    private static String getRandomBaseColor() {
+        // 0x80 is the hex value for 256 / 2, which is
+        // half the amount of possible R/G/B values
+        int r = 0x80 - (80 - (int) (Math.random() * 160));
+        int g = 0x80 - (80 - (int) (Math.random() * 160));
+        int b = 0x80 - (80 - (int) (Math.random() * 160));
+
+        String colorName = "randomColor" + instanceCounter;
+        StaticTools.setzeFarbe(colorName, r, g, b);
+        return colorName;
+    }
+
+    private static Color adjustColor(Color base, int deltaRed, int deltaGreen, int deltaBlue) {
+        int r = clamp(base.getRed()   + deltaRed);
+        int g = clamp(base.getGreen() + deltaGreen);
+        int b = clamp(base.getBlue()  + deltaBlue);
+        return new Color(r, g, b);
+    }
+
+    private static int clamp(int wert) {
+        if (wert > 255) return 255;
+        if (wert < 0) return 0;
+        return wert;
+    }
+
+    private static Color getHelmetColor(Color base) {
+        return new Color(
+            255 - base.getRed(),
+            255 - base.getGreen(),
+            255 - base.getBlue()
+        );
     }
 
     public void updateWheelAnimation() {

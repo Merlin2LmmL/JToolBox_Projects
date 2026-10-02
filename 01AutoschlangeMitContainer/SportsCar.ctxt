@@ -1,0 +1,27 @@
+#BlueJ class context
+#Wed Sep 30 08:31:51 CEST 2026
+comment0.target=SportsCar
+comment0.text=\n A Formula One car design by\n\n @author Merlin2LmmL\n \n template by\n @coauther K. Hartmann\n @version 1.0.5\n
+comment1.params=_name xPos yPos ps baseColor _animateWheels _scale
+comment1.target=SportsCar(java.lang.String, int, int, int, java.lang.String, boolean, int)
+comment1.text=\n @param _name the name of the car\n @param xPos the inital x position\n @param yPos the inital y position\n @param ps the car's horsepower\n @param baseColor the car's base color (a StaticTools color name)\n @param _animateWheels weather wheel animation is enabled\n @param _scale the scale factor of the car\n
+comment10.target=void updateWheelAnimation()
+comment11.params=line centerX centerY angleOffset
+comment11.target=void updateWheelLine(Linie, int, int, int)
+comment2.target=SportsCar()
+comment2.text=\n Creates a quick, random baseColored instance of the car\n
+comment3.params=startX startY
+comment3.target=SportsCar(int, int)
+comment3.text=\n Constructor for @K. Hartmann\n \n Spawn random baseColored car with set start position.\n \n @param startX Initial x position\n @param startY Initial y position\n
+comment4.params=neuesX neuesY
+comment4.target=void setzePosition(int, int)
+comment5.params=entfernung
+comment5.target=void fahren(int)
+comment6.target=java.lang.String getRandomBaseColor()
+comment7.params=base deltaRed deltaGreen deltaBlue
+comment7.target=java.awt.Color adjustColor(java.awt.Color, int, int, int)
+comment8.params=wert
+comment8.target=int clamp(int)
+comment9.params=base
+comment9.target=java.awt.Color getHelmetColor(java.awt.Color)
+numComments=12

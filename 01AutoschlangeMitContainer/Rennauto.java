@@ -2,7 +2,7 @@
 /**
  * Der Rennwagen von K. Hartmann 
  */
-public class Rennauto
+public class Rennauto extends Kraftfahrzeug
 {
     private int x, y;
     private String bezeichnung, farbe, typ; 
@@ -18,6 +18,7 @@ public class Rennauto
      */
     public Rennauto(String _bezeichnung, int _ps, int xPos, int yPos)
     {
+        super("Bully",150,xPos,yPos);
         
         x = xPos;
         y = yPos;

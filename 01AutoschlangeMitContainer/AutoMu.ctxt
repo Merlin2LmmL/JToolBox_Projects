@@ -1,0 +1,15 @@
+#BlueJ class context
+#Wed Sep 30 08:43:06 CEST 2026
+comment0.target=AutoMu
+comment0.text=\n @author Mustafa Bozkurt\n
+comment1.params=_bezeichnung _ps xPos yPos
+comment1.target=AutoMu(java.lang.String, int, int, int)
+comment1.text=\n Constructor for objects of class AutoMu\n
+comment2.params=xPos yPos
+comment2.target=AutoMu(int, int)
+comment3.target=void zeichnen()
+comment4.params=neuesX neuesY
+comment4.target=void setzePosition(int, int)
+comment5.params=entfernung
+comment5.target=void fahren(int)
+numComments=6

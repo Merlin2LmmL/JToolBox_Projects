@@ -1,0 +1,12 @@
+#BlueJ class context
+#Wed Sep 30 08:43:06 CEST 2026
+comment0.target=car
+comment0.text=\n Vincent Scheffers\n
+comment1.target=car()
+comment2.params=_bezeichnung _ps xPos yPos
+comment2.target=car(java.lang.String, int, int, int)
+comment3.params=neuesX neuesY
+comment3.target=void setzePosition(int, int)
+comment4.params=entfernung
+comment4.target=void fahren(int)
+numComments=5
