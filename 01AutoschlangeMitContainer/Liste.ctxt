@@ -1,0 +1,15 @@
+#BlueJ class context
+#Fri Oct 16 12:10:22 CEST 2026
+comment0.target=Liste
+comment0.text=\n Verkettete Listen\n\n @author Merlin Ortner\n @version 1.1.1\n
+comment1.target=Liste()
+comment2.params=fneu
+comment2.target=void amEndeEinf\u00FCgen(Kraftfahrzeug)
+comment3.params=position
+comment3.target=Knoten getKnoten(int)
+comment4.params=bezeichnung
+comment4.target=Knoten getKnotenByName(java.lang.String)
+comment5.params=bezeichnung
+comment5.target=Knoten getKnotenByNameRecursive(java.lang.String)
+comment6.target=int countKnoten()
+numComments=7

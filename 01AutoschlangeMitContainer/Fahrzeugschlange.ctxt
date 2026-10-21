@@ -1,0 +1,8 @@
+#BlueJ class context
+#Fri Oct 16 12:10:43 CEST 2026
+comment0.target=Fahrzeugschlange
+comment1.params=nCars
+comment1.target=Fahrzeugschlange(int)
+comment2.target=void aufr\u00FCcken()
+comment3.target=Liste getListe()
+numComments=4

@@ -1,0 +1,21 @@
+#BlueJ class context
+#Fri Oct 16 12:03:33 CEST 2026
+comment0.target=Knoten
+comment0.text=\n Knoten, doppelt verkettet durch "Pointer" in einer Liste\n\n @author Merlin Ortner\n @version 1.0.2\n
+comment1.params=fahrzeugNeu k
+comment1.target=Knoten(Kraftfahrzeug, Knoten)
+comment10.params=NeuVorg\u00E4nger
+comment10.target=void \u00E4ndereVorg\u00E4nger(Knoten)
+comment2.params=fahrzeugNeu v n
+comment2.target=Knoten(Kraftfahrzeug, Knoten, Knoten)
+comment3.params=fneu
+comment3.target=void amEndeEinf\u00FCgen(Kraftfahrzeug)
+comment4.params=bezeichnung
+comment4.target=Knoten getKnotenByNameRecursive(java.lang.String)
+comment5.target=int countNachfoler()
+comment6.target=Kraftfahrzeug getKraftfahrzeug()
+comment7.target=Knoten getNachfolger()
+comment8.target=Knoten getVorg\u00E4nger()
+comment9.params=NeuNachfolger
+comment9.target=void \u00E4ndereNachfolger(Knoten)
+numComments=11
