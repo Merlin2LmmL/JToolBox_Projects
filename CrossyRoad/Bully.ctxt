@@ -1,0 +1,15 @@
+#BlueJ class context
+#Wed Oct 28 16:40:32 CET 2026
+comment0.target=Bully
+comment0.text=\n Der Rennwagen von K. Hartmann \n
+comment1.params=xPos yPos
+comment1.target=Bully(int, int)
+comment2.target=void Zeichnen()
+comment3.params=dx
+comment3.target=void animiere(int)
+comment4.target=void entfernen()
+comment5.params=neuesX neuesY
+comment5.target=void setzePosition(int, int)
+comment6.params=dx dy
+comment6.target=void fahren(int, int)
+numComments=7

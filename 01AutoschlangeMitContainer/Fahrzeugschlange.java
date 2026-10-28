@@ -11,24 +11,24 @@ public class Fahrzeugschlange {
                 case 0:
                     list.amEndeEinfügen(new Wohnmobil(i * DISTANCEELEMENTS, 0));
                     break;
-                // case 1:
-                    // list.amEndeEinfügen(new Pickup(i * DISTANCEELEMENTS, 0));
-                    // break;
-                // case 2:
-                    // list.amEndeEinfügen(new LKW(i * DISTANCEELEMENTS, 0));
-                    // break;
-                // case 3:
-                    // list.amEndeEinfügen(new Auto(i * DISTANCEELEMENTS, 0));
-                    // break;
-                // case 4:
-                    // list.amEndeEinfügen(new Bully(i * DISTANCEELEMENTS, 0));
-                    // break;
-                // case 5:
-                    // list.amEndeEinfügen(new Pritschenwagen(i * DISTANCEELEMENTS, 0));
-                    // break;
-                // case 6:
-                    // list.amEndeEinfügen(new Person("Mensch", i * DISTANCEELEMENTS, 0));
-                    // break;
+                case 1:
+                    list.amEndeEinfügen(new Pickup(i * DISTANCEELEMENTS, 0));
+                    break;
+                case 2:
+                    list.amEndeEinfügen(new LKW(i * DISTANCEELEMENTS, 0));
+                    break;
+                case 3:
+                    list.amEndeEinfügen(new Auto(i * DISTANCEELEMENTS, 0));
+                    break;
+                case 4:
+                    list.amEndeEinfügen(new Bully(i * DISTANCEELEMENTS, 0));
+                    break;
+                case 5:
+                    list.amEndeEinfügen(new Pritschenwagen(i * DISTANCEELEMENTS, 0));
+                    break;
+                case 6:
+                    list.amEndeEinfügen(new Person("Mensch", i * DISTANCEELEMENTS, 0));
+                    break;
                 // case 7:
                 //     list.amEndeEinfügen(new FormulaOne(i * DISTANCEELEMENTS, 0));
                 //     break;

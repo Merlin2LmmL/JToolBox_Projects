@@ -1,0 +1,27 @@
+#BlueJ class context
+#Wed Oct 28 17:00:06 CET 2026
+comment0.target=CrossyRoad
+comment0.text=\n A Crossy Road style game\: walk freely over an endless, scrolling field\n of grass and roads and don't get run over. The player is the Person,\n the traffic are the car sprites of this project.\n\n Controls\: arrow keys or W/A/S/D to walk, H to show the hitboxes,\n Space or Enter to restart.\n\n The game loop runs on the Swing thread\: all changes of one frame happen in\n a single step, so the screen never shows a half-moved frame.\n\n @author Merlin Ortner\n @version 2.0.0\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment10.target=void zeilenNachladen()
+comment10.text=\n Builds rows ahead of the screen and throws away the ones behind it.\n
+comment11.target=void hitboxenUmschalten()
+comment12.target=void anzeigeZeichnen()
+comment13.target=void spielEnde()
+comment2.target=CrossyRoad()
+comment3.target=void tastenAnmelden()
+comment4.target=void spielen()
+comment5.target=void neuesSpiel()
+comment6.params=dt
+comment6.target=void bild(double)
+comment6.text=\n One frame\: walking, camera, traffic, collision and drawing.\n
+comment7.params=dt
+comment7.target=void gehen(double)
+comment7.text=\n Moves the player with the pressed keys (smoothly speeding up and\n slowing down) and lets trees block the way.\n
+comment8.params=x y
+comment8.target=boolean frei(double, double)
+comment9.params=kam
+comment9.target=void bildSchirm(int)
+comment9.text=\n Moves the camera and the player on the screen. Everything is based on the\n same whole-pixel camera position, so nothing jitters against each other.\n
+numComments=14

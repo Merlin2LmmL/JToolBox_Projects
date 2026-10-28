@@ -1,0 +1,29 @@
+#BlueJ class context
+#Wed Oct 28 16:40:04 CET 2026
+comment0.target=Kraftfahrzeug
+comment0.text=\n Abstrct class dictating all car classes.\n\n @author Merlin Ortner\n @version 1.0.1\n
+comment1.params=_bezeichnung _ps xPos yPos
+comment1.target=Kraftfahrzeug(java.lang.String, int, int, int)
+comment10.params=base deltaRed deltaGreen deltaBlue
+comment10.target=java.awt.Color adjustColor(java.awt.Color, int, int, int)
+comment11.params=wert
+comment11.target=int clamp(int)
+comment12.params=base
+comment12.target=java.awt.Color getHelmetColor(java.awt.Color)
+comment2.params=neuesX neuesY
+comment2.target=void setzePosition(int, int)
+comment3.params=dx dy
+comment3.target=void fahren(int, int)
+comment4.params=dx dy
+comment4.target=void bewegen(int, int)
+comment5.params=dx
+comment5.target=void animiere(int)
+comment5.text=\n Plays the driving animation (spinning wheels) without moving the car.\n Non-blocking, so a game loop can call it once per frame.\n\n @param dx the distance driven since the last frame\n
+comment6.target=void entfernen()
+comment6.text=\n Removes the car's graphics from the drawing area.\n
+comment7.params=key
+comment7.target=boolean equalsKey(java.lang.String)
+comment8.params=vergleich
+comment8.target=boolean isSmallerThan(Datenelement)
+comment9.target=java.lang.String getBezeichnung()
+numComments=13

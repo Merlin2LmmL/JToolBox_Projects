@@ -1,0 +1,17 @@
+#BlueJ class context
+#Wed Oct 28 16:40:04 CET 2026
+comment0.target=Wohnmobil
+comment1.params=_bezeichnung _ps xPos yPos
+comment1.target=Wohnmobil(java.lang.String, int, int, int)
+comment2.params=xPos yPos
+comment2.target=Wohnmobil(int, int)
+comment3.target=Wohnmobil()
+comment4.target=void wohnmobil_zeichnen()
+comment5.params=dx
+comment5.target=void animiere(int)
+comment6.target=void entfernen()
+comment7.params=neuesX neuesY
+comment7.target=void setzePosition(int, int)
+comment8.params=dx dy
+comment8.target=void fahren(int, int)
+numComments=9

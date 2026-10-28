@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 15:50:05 CET 2026
+#Wed Oct 28 16:39:00 CET 2026
 comment0.target=Wohnmobil
 comment1.params=_bezeichnung _ps xPos yPos
 comment1.target=Wohnmobil(java.lang.String, int, int, int)

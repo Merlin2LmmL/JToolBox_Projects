@@ -1,9 +1,11 @@
 #BlueJ class context
-#Wed Oct 28 15:44:26 CET 2026
+#Wed Oct 28 16:34:15 CET 2026
 comment0.target=Kraftfahrzeug
 comment0.text=\n Abstrct class dictating all car classes.\n\n @author Merlin Ortner\n @version 1.0.1\n
 comment1.params=_bezeichnung _ps xPos yPos
 comment1.target=Kraftfahrzeug(java.lang.String, int, int, int)
+comment10.params=base
+comment10.target=java.awt.Color getHelmetColor(java.awt.Color)
 comment2.params=neuesX neuesY
 comment2.target=void setzePosition(int, int)
 comment3.params=dx dy
@@ -15,4 +17,8 @@ comment5.target=boolean equalsKey(java.lang.String)
 comment6.params=vergleich
 comment6.target=boolean isSmallerThan(Datenelement)
 comment7.target=java.lang.String getBezeichnung()
-numComments=8
+comment8.params=base deltaRed deltaGreen deltaBlue
+comment8.target=java.awt.Color adjustColor(java.awt.Color, int, int, int)
+comment9.params=wert
+comment9.target=int clamp(int)
+numComments=11

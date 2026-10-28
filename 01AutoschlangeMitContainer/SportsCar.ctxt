@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 16:27:02 CET 2026
+#Wed Oct 28 16:37:00 CET 2026
 comment0.target=SportsCar
 comment0.text=\n A Formula One car design by\n\n @author Merlin2LmmL\n \n template by\n @coauther K. Hartmann\n @version 1.0.6\n
 comment1.params=_name xPos yPos ps baseColor _animateWheels _scale
@@ -10,10 +10,13 @@ comment11.params=centerX centerY
 comment11.target=void addRim(int, int)
 comment11.text=\n Layers a red sidewall ring, black rubber and a silver rim\n on top of the plain black tyre.\n
 comment12.target=void updateWheelAnimation()
-comment13.params=degrees
-comment13.target=void updateWheelAnimation(int)
-comment14.params=line centerX centerY angleOffset
-comment14.target=void updateWheelLine(Linie, int, int, int)
+comment13.params=dx
+comment13.target=void animiere(int)
+comment14.target=void entfernen()
+comment15.params=degrees
+comment15.target=void updateWheelAnimation(int)
+comment16.params=line centerX centerY angleOffset
+comment16.target=void updateWheelLine(Linie, int, int, int)
 comment2.target=SportsCar()
 comment2.text=\n Creates a quick, random baseColored instance of the car\n
 comment3.params=startX startY
@@ -33,4 +36,4 @@ comment7.text=\n @param power 0 hides the flames, 1 is the longest flame\n
 comment8.params=on
 comment8.target=void setBrakeLight(boolean)
 comment9.target=java.lang.String getRandomBaseColor()
-numComments=15
+numComments=17

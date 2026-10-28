@@ -1,0 +1,26 @@
+#BlueJ class context
+#Wed Oct 28 16:40:04 CET 2026
+comment0.target=Person
+comment1.params=neuerName _x _y
+comment1.target=Person(java.lang.String, int, int)
+comment10.target=void ruhepose()
+comment10.text=\n Stellt die Ruhepose wieder her.\n
+comment11.params=neuesX neuesY
+comment11.target=void setzePosition(int, int)
+comment12.target=void personZeichnen()
+comment2.target=void grafikEntfernen()
+comment3.target=void nachVorne()
+comment3.text=\n Zeichnet die Person \u00FCber allen anderen Objekten.\n
+comment4.target=void informationAusgeben()
+comment5.params=schluessel
+comment5.target=boolean equalsKey(java.lang.String)
+comment6.params=vergleich
+comment6.target=boolean isSmallerThan(Datenelement)
+comment7.target=java.lang.String getBezeichnung()
+comment8.params=dx dy
+comment8.target=void bewegen(int, int)
+comment8.text=\n L\u00E4sst die Person gehen (auch diagonal)\: Arme und Beine schwingen gegengleich,\n der ganze K\u00F6rper wippt bei jedem Schritt auf und ab.\n
+comment9.params=swing
+comment9.target=void schrittPose(int)
+comment9.text=\n Stellt einen Schritt der Gehanimation ein, ohne die Person zu bewegen\n (nicht blockierend, z.B. f\u00FCr eine Spielschleife).\n\n @param swing wie weit Arme und Beine ausschlagen (-9 bis 9, gegengleich)\n
+numComments=13

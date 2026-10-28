@@ -1,0 +1,25 @@
+#BlueJ class context
+#Wed Oct 28 16:40:04 CET 2026
+comment0.target=Spur
+comment0.text=\n One row of the Crossy Road playfield\: either a grass row with trees\n or a road row on which a few vehicles drive to the right.\n\n @author Merlin Ortner\n @version 1.0.0\n
+comment1.params=_zeile _strasse bauemeErlaubt
+comment1.target=Spur(int, boolean, boolean)
+comment1.text=\n @param _zeile the number of the row (0 is the bottom one)\n @param _strasse true for a road, false for grass\n @param bauemeErlaubt whether trees may grow on a grass row\n
+comment10.params=mitteX halbe
+comment10.target=boolean trifft(double, int)
+comment10.text=\n @param mitteX the x center of the player\n @param halbe half the width of the player\n @return whether a vehicle of this row overlaps the player\n
+comment11.target=void entfernen()
+comment2.target=void strasseZeichnen()
+comment3.params=bauemeErlaubt
+comment3.target=void graseZeichnen(boolean)
+comment4.target=void fahrzeugeErzeugen()
+comment5.params=art
+comment5.target=Kraftfahrzeug neuesFahrzeug(int)
+comment6.target=int getZeile()
+comment7.target=boolean istStrasse()
+comment8.params=spalte
+comment8.target=boolean istBaum(int)
+comment9.params=dt oben
+comment9.target=void aktualisieren(double, int)
+comment9.text=\n Drives the vehicles on and draws the row.\n\n @param dt the seconds since the last frame\n @param oben the y position of the top of this row on the screen\n
+numComments=12
