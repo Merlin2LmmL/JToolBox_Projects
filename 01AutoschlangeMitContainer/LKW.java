@@ -69,10 +69,11 @@ public class LKW extends Kraftfahrzeug
         auto.setzePosition(x, y);
     }
 
-    public void fahren(int entfernung)
+    public void fahren(int dx, int dy)
     {
-        x = x + entfernung;       
-        auto.langsamHorizontalBewegen(entfernung);
+        x = x + dx;
+        y = y + dy;
+        auto.langsamBewegen(dx, dy);
     }
 
     //     public void autoNeuZeichnen(){

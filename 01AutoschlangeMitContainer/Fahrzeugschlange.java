@@ -1,47 +1,58 @@
 public class Fahrzeugschlange {
-    private Liste data;
-    private int distanceData = 150;
+    private Liste list;
+    private final int DISTANCEELEMENTS = 150;
+    private final int VERTICALHIDDEN = 100;
 
-    public Fahrzeugschlange(int ndata) {
-        data = new Liste();
+    public Fahrzeugschlange(int nlist) {
+        list = new Liste();
 
-        for (int i = 0; i < ndata; ++i) {
-            switch ((int) (Math.random() * 7)) {
+        for (int i = 0; i < nlist; ++i) {
+            switch ((int) (Math.random() * 9)) {
                 case 0:
-                    data.amEndeEinfügen(new Wohnmobil(i * distanceData, 0));
+                    list.amEndeEinfügen(new Wohnmobil(i * DISTANCEELEMENTS, 0));
                     break;
-                case 1:
-                    data.amEndeEinfügen(new Pickup(i * distanceData, 0));
-                    break;
-                case 2:
-                    data.amEndeEinfügen(new LKW(i * distanceData, 0));
-                    break;
-                case 3:
-                    data.amEndeEinfügen(new Auto(i * distanceData, 0));
-                    break;
-                case 4:
-                    data.amEndeEinfügen(new Bully(i * distanceData, 0));
-                    break;
-                case 5:
-                    data.amEndeEinfügen(new Pritschenwagen(i * distanceData, 0));
-                    break;
-                case 6:
-                    data.amEndeEinfügen(new Person("Mensch", i * distanceData + 40, 15));
-                    break;
+                // case 1:
+                    // list.amEndeEinfügen(new Pickup(i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 2:
+                    // list.amEndeEinfügen(new LKW(i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 3:
+                    // list.amEndeEinfügen(new Auto(i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 4:
+                    // list.amEndeEinfügen(new Bully(i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 5:
+                    // list.amEndeEinfügen(new Pritschenwagen(i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 6:
+                    // list.amEndeEinfügen(new Person("Mensch", i * DISTANCEELEMENTS, 0));
+                    // break;
+                // case 7:
+                //     list.amEndeEinfügen(new FormulaOne(i * DISTANCEELEMENTS, 0));
+                //     break;
                 default:
-                    data.amEndeEinfügen(new SportsCar(i * distanceData, 0));
+                    list.amEndeEinfügen(new SportsCar(i * DISTANCEELEMENTS, 0));
                     break;
             }
         }
     }
 
-    // public void aufrücken() {
-        // for (int i = data.knotenAnzahl - 1; i >= 0; --i) {
-            // data.getKnoten(i).getKraftfahrzeug().fahren(distanceData);
-        // }
-        
-        // // Verschiebung der Knoten in der Liste
-    // }
+    public void aufrücken() {
+        for (int i = list.getLänge() - 1; i >= 0; --i) {
+            list.getKnoten(i).getDatenelement().bewegen(DISTANCEELEMENTS, 0);
+        }
+    }
     
-    public Liste getListe() { return data; }
+    public void einfügen(int pos, Datenelement dneu) {
+        for (int i = list.getLänge() - 1; i >= pos; --i) {
+            list.getKnoten(i).getDatenelement().bewegen(DISTANCEELEMENTS, 0);
+        }
+        
+        dneu.setzePosition(pos * DISTANCEELEMENTS, -VERTICALHIDDEN);
+        list.anPosEinfügen(dneu, pos).getDatenelement().bewegen(0, VERTICALHIDDEN);
+    }
+    
+    public Liste getListe() { return list; }
 }

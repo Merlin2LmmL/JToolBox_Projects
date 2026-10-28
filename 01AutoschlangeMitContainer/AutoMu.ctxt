@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 08:42:06 CET 2026
+#Wed Oct 28 15:50:05 CET 2026
 comment0.target=AutoMu
 comment0.text=\n @author Mustafa Bozkurt\n
 comment1.params=_bezeichnung _ps xPos yPos
@@ -10,6 +10,6 @@ comment2.target=AutoMu(int, int)
 comment3.target=void zeichnen()
 comment4.params=neuesX neuesY
 comment4.target=void setzePosition(int, int)
-comment5.params=entfernung
-comment5.target=void fahren(int)
+comment5.params=dx dy
+comment5.target=void fahren(int, int)
 numComments=6

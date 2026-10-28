@@ -298,6 +298,25 @@ public class Behaelter implements IContainer, IComponente {
     }
 
     /**
+     * Bewege gleichmäßig um dx horizontal und dy vertikal (auch diagonal).
+     */
+    public void langsamBewegen(int dx, int dy) {
+        int schritte = Math.max(Math.abs(dx), Math.abs(dy));
+        int bisherX = 0, bisherY = 0;
+
+        for (int i = 1; i <= schritte; i++) {
+            int zielX = Math.round((float) dx * i / schritte);
+            int zielY = Math.round((float) dy * i / schritte);
+            xPos += zielX - bisherX;
+            yPos += zielY - bisherY;
+            obj.setzePosition(xPos, yPos);
+            bisherX = zielX;
+            bisherY = zielY;
+            StaticTools.warte(10);
+        }
+    }
+
+    /**
      * Bewege vertikal um 'entfernung' Bildschirmpunkte.
      */
     public void langsamHorizontalBewegen(int entfernung) {

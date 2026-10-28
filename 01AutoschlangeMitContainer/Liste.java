@@ -27,4 +27,13 @@ public class Liste {
     public void removeElement(String bezeichnung) {
         anfang = anfang.removeElement(bezeichnung);
     }
+    
+    public Listenelement anPosEinfügen(Datenelement dneu, int pos) {
+        if (pos == 0) {
+            anfang = new Knoten(dneu, anfang);
+            return anfang;
+        }
+        // Knoten.anPosEinfügen fügt *hinter* dem Knoten ein, daher pos - 1
+        return anfang.anPosEinfügen(dneu, pos - 1);
+    }
 }

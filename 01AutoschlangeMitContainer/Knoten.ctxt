@@ -1,23 +1,25 @@
 #BlueJ class context
-#Wed Oct 28 09:29:15 CET 2026
+#Wed Oct 28 15:50:05 CET 2026
 comment0.target=Knoten
-comment0.text=\n Knoten, doppelt verkettet durch "Pointer" in einer Liste\n\n @author Merlin Ortner\n @version 1.0.2\n
-comment1.params=fNeu k
+comment0.text=\n Knoten, einfach verkettet durch "Pointer" in einer Liste\n\n @author Merlin Ortner\n @version 1.0.3\n
+comment1.params=dNeu k
 comment1.target=Knoten(Datenelement, Listenelement)
-comment10.params=NeuNachfolger
-comment10.target=void \u00E4ndereNachfolger(Knoten)
+comment10.target=Listenelement getNachfolger()
+comment11.params=NeuNachfolger
+comment11.target=void \u00E4ndereNachfolger(Knoten)
 comment2.params=dataNeu v n
 comment2.target=Knoten(Datenelement, Knoten, Knoten)
 comment3.params=dneu
 comment3.target=Listenelement amEndeEinf\u00FCgen(Datenelement)
-comment4.params=bezeichnung
-comment4.target=Listenelement suchen(java.lang.String)
-comment5.params=position
-comment5.target=Listenelement getKnoten(int)
-comment6.params=bezeichnung
-comment6.target=Listenelement removeElement(java.lang.String)
-comment7.params=length
-comment7.target=int getLength(int)
-comment8.target=Datenelement getDatenelement()
-comment9.target=Listenelement getNachfolger()
-numComments=11
+comment4.params=dneu pos
+comment4.target=Listenelement anPosEinf\u00FCgen(Datenelement, int)
+comment5.params=bezeichnung
+comment5.target=Listenelement suchen(java.lang.String)
+comment6.params=position
+comment6.target=Listenelement getKnoten(int)
+comment7.params=bezeichnung
+comment7.target=Listenelement removeElement(java.lang.String)
+comment8.params=length
+comment8.target=int getLength(int)
+comment9.target=Datenelement getDatenelement()
+numComments=12

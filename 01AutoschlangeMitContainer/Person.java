@@ -1,8 +1,8 @@
-
 public class Person implements Datenelement
 {
     private String name;
     private int x, y;
+    private final int offX = 40, offY = 15;
     private Kreis kopf;
     private RechteckMitRundenEcken koerper;
     private Linie armL, armR, beinL, beinR;
@@ -12,8 +12,9 @@ public class Person implements Datenelement
     public Person(String neuerName, int _x, int _y)
     {
         name = neuerName;
-        x = _x;
-        y = _y;
+        // Offsets to fit the cars container bounds
+        x = _x + offX;
+        y = _y + offY;
         StaticTools.setzeFarbe("farbe1", StaticTools.gibZufall(255), StaticTools.gibZufall(255), StaticTools.gibZufall(255));
         farbe = "farbe1";
         personZeichnen();
@@ -36,14 +37,15 @@ public class Person implements Datenelement
     }
     
     /**
-     * Lässt die Person gehen: Arme und Beine schwingen gegengleich,
+     * Lässt die Person gehen (auch diagonal): Arme und Beine schwingen gegengleich,
      * der ganze Körper wippt bei jedem Schritt auf und ab.
      */
-    public void bewegen(int entf){
-        int delta = entf < 0 ? -1 : 1;
+    public void bewegen(int dx, int dy){
+        int schritte = Math.max(Math.abs(dx), Math.abs(dy));
+        int bisherX = 0, bisherY = 0;
         int bounce = 0;
 
-        for (int i = 0; i < Math.abs(entf); i++) {
+        for (int i = 1; i <= schritte; i++) {
             double phase = i * 0.25;
             int swing = (int) Math.round(Math.sin(phase) * 9);
             int newBounce = (int) Math.round(Math.abs(Math.sin(phase)) * 4);
@@ -53,10 +55,14 @@ public class Person implements Datenelement
             armL.setzeEndpunkte(25, 35, 15 - swing, 50);
             armR.setzeEndpunkte(35, 35, 45 + swing, 50);
 
-            personGrafik.vertikalBewegen(bounce - newBounce);
+            int zielX = Math.round((float) dx * i / schritte);
+            int zielY = Math.round((float) dy * i / schritte);
+            personGrafik.horizontalBewegen(zielX - bisherX);
+            personGrafik.vertikalBewegen((zielY - bisherY) + (bounce - newBounce));
+            bisherX = zielX;
+            bisherY = zielY;
             bounce = newBounce;
 
-            personGrafik.horizontalBewegen(delta);
             StaticTools.warte(10);
         }
 
@@ -67,9 +73,16 @@ public class Person implements Datenelement
         armL.setzeEndpunkte(25, 35, 15, 50);
         armR.setzeEndpunkte(35, 35, 45, 50);
 
-        x = x + entf;
+        x = x + dx;
+        y = y + dy;
     }
     
+        public void setzePosition(int neuesX, int neuesY) {
+        x = neuesX + offX;
+        y = neuesY + offY;
+        personGrafik.setzePosition(x, y);
+    }
+
     public void personZeichnen()
     {
       personGrafik = new Behaelter(x, y, 60, 120);

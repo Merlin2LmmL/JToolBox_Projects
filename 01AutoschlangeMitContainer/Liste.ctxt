@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 09:29:19 CET 2026
+#Wed Oct 28 15:50:05 CET 2026
 comment0.target=Liste
 comment0.text=\n Verkettete Listen\n\n @author Merlin Ortner\n @version 1.2.0\n
 comment1.target=Liste()
@@ -14,4 +14,6 @@ comment6.params=dneu
 comment6.target=Listenelement amAnfangEinf\u00FCgen(Datenelement)
 comment7.params=bezeichnung
 comment7.target=void removeElement(java.lang.String)
-numComments=8
+comment8.params=dneu pos
+comment8.target=Listenelement anPosEinf\u00FCgen(Datenelement, int)
+numComments=9

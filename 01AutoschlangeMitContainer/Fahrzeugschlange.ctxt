@@ -1,7 +1,10 @@
 #BlueJ class context
-#Wed Oct 28 09:29:19 CET 2026
+#Wed Oct 28 16:29:06 CET 2026
 comment0.target=Fahrzeugschlange
-comment1.params=ndata
+comment1.params=nlist
 comment1.target=Fahrzeugschlange(int)
-comment2.target=Liste getListe()
-numComments=3
+comment2.target=void aufr\u00FCcken()
+comment3.params=pos dneu
+comment3.target=void einf\u00FCgen(int, Datenelement)
+comment4.target=Liste getListe()
+numComments=5

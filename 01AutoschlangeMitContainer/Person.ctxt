@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 08:52:48 CET 2026
+#Wed Oct 28 16:00:36 CET 2026
 comment0.target=Person
 comment1.params=neuerName _x _y
 comment1.target=Person(java.lang.String, int, int)
@@ -10,8 +10,10 @@ comment4.target=boolean equalsKey(java.lang.String)
 comment5.params=vergleich
 comment5.target=boolean isSmallerThan(Datenelement)
 comment6.target=java.lang.String getBezeichnung()
-comment7.params=entf
-comment7.target=void bewegen(int)
-comment7.text=\n L\u00E4sst die Person gehen\: Arme und Beine schwingen gegengleich,\n der ganze K\u00F6rper wippt bei jedem Schritt auf und ab.\n
-comment8.target=void personZeichnen()
-numComments=9
+comment7.params=dx dy
+comment7.target=void bewegen(int, int)
+comment7.text=\n L\u00E4sst die Person gehen (auch diagonal)\: Arme und Beine schwingen gegengleich,\n der ganze K\u00F6rper wippt bei jedem Schritt auf und ab.\n
+comment8.params=neuesX neuesY
+comment8.target=void setzePosition(int, int)
+comment9.target=void personZeichnen()
+numComments=10

@@ -1,15 +1,15 @@
 /**
- * Knoten, doppelt verkettet durch "Pointer" in einer Liste
+ * Knoten, einfach verkettet durch "Pointer" in einer Liste
  *
  * @author Merlin Ortner
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class Knoten extends Listenelement {
     public Listenelement nachfolger;
     private Datenelement data;
 
-    public Knoten(Datenelement fNeu, Listenelement k) {
-        data = fNeu;
+    public Knoten(Datenelement dNeu, Listenelement k) {
+        data = dNeu;
         nachfolger = k;
     }
 
@@ -21,6 +21,14 @@ public class Knoten extends Listenelement {
     public Listenelement amEndeEinfügen(Datenelement dneu) {
         nachfolger = nachfolger.amEndeEinfügen(dneu);
         return this;
+    }
+    
+    public Listenelement anPosEinfügen(Datenelement dneu, int pos) {
+        if (pos == 0) {
+            Knoten kneu = new Knoten(dneu, nachfolger);
+            return nachfolger = kneu;
+        }
+        return nachfolger.anPosEinfügen(dneu, pos - 1);
     }
 
     public Listenelement suchen(String bezeichnung) {

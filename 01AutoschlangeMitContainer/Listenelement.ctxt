@@ -1,13 +1,18 @@
 #BlueJ class context
-#Wed Oct 28 08:58:50 CET 2026
+#Wed Oct 28 16:06:53 CET 2026
 comment0.target=Listenelement
-comment0.text=\n Write a description of class Listenelement here.\n\n @author Merlin Ortner\n @version 1.0.0\n
+comment0.text=\n Write a description of class Listenelement here.\n\n @author Merlin Ortner\n @version 1.0.1\n
 comment1.params=dneu
 comment1.target=Listenelement amEndeEinf\u00FCgen(Datenelement)
-comment2.params=position
-comment2.target=Listenelement getKnoten(int)
-comment3.params=bezeichnung
-comment3.target=Listenelement suchen(java.lang.String)
-comment4.params=length
-comment4.target=int getLength(int)
-numComments=5
+comment2.params=dneu pos
+comment2.target=Listenelement anPosEinf\u00FCgen(Datenelement, int)
+comment3.params=position
+comment3.target=Listenelement getKnoten(int)
+comment4.params=bezeichnung
+comment4.target=Listenelement suchen(java.lang.String)
+comment5.params=length
+comment5.target=int getLength(int)
+comment6.params=bezeichnung
+comment6.target=Listenelement removeElement(java.lang.String)
+comment7.target=Datenelement getDatenelement()
+numComments=8

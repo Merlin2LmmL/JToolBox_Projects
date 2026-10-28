@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 08:42:06 CET 2026
+#Wed Oct 28 15:50:05 CET 2026
 comment0.target=Rennauto
 comment0.text=\n Der Rennwagen von K. Hartmann \n
 comment1.params=_bezeichnung _ps xPos yPos
@@ -7,6 +7,6 @@ comment1.target=Rennauto(java.lang.String, int, int, int)
 comment1.text=\n Konstruktor f\u00FCr Objekte der Klasse Auto\n
 comment2.params=neuesX neuesY
 comment2.target=void setzePosition(int, int)
-comment3.params=entfernung
-comment3.target=void fahren(int)
+comment3.params=dx dy
+comment3.target=void fahren(int, int)
 numComments=4

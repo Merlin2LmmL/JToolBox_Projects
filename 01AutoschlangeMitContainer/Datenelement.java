@@ -8,4 +8,6 @@ public interface Datenelement {
     boolean equalsKey(String key);
     boolean isSmallerThan(Datenelement vergleich);
     String getBezeichnung();
+    void bewegen(int dx, int dy);
+    void setzePosition(int x, int y);
 }

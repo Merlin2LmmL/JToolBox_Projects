@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 08:42:05 CET 2026
+#Wed Oct 28 15:50:05 CET 2026
 comment0.target=LKW
 comment0.text=\n Der wagen von Minh Hoang \n
 comment1.params=_bezeichnung _ps xPos yPos
@@ -11,6 +11,6 @@ comment3.target=LKW()
 comment4.target=void zeichnen()
 comment5.params=neuesX neuesY
 comment5.target=void setzePosition(int, int)
-comment6.params=entfernung
-comment6.target=void fahren(int)
+comment6.params=dx dy
+comment6.target=void fahren(int, int)
 numComments=7

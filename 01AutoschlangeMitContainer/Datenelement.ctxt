@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Oct 28 08:41:36 CET 2026
+#Wed Oct 28 15:44:10 CET 2026
 comment0.target=Datenelement
 comment0.text=\n Bridge between class Liste and Kraftfahrzeug/Person\n\n @author Merlin Ortner\n @version 1.0.1\n
 comment1.params=key
@@ -7,4 +7,8 @@ comment1.target=boolean equalsKey(java.lang.String)
 comment2.params=vergleich
 comment2.target=boolean isSmallerThan(Datenelement)
 comment3.target=java.lang.String getBezeichnung()
-numComments=4
+comment4.params=dx dy
+comment4.target=void bewegen(int, int)
+comment5.params=x y
+comment5.target=void setzePosition(int, int)
+numComments=6
