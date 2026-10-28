@@ -1,5 +1,5 @@
 #BlueJ class context
-#Wed Sep 30 08:31:51 CEST 2026
+#Wed Oct 28 08:42:05 CET 2026
 comment0.target=SportsCar
 comment0.text=\n A Formula One car design by\n\n @author Merlin2LmmL\n \n template by\n @coauther K. Hartmann\n @version 1.0.5\n
 comment1.params=_name xPos yPos ps baseColor _animateWheels _scale

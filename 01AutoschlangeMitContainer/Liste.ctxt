@@ -1,15 +1,17 @@
 #BlueJ class context
-#Fri Oct 16 12:10:22 CEST 2026
+#Wed Oct 28 09:29:19 CET 2026
 comment0.target=Liste
-comment0.text=\n Verkettete Listen\n\n @author Merlin Ortner\n @version 1.1.1\n
+comment0.text=\n Verkettete Listen\n\n @author Merlin Ortner\n @version 1.2.0\n
 comment1.target=Liste()
-comment2.params=fneu
-comment2.target=void amEndeEinf\u00FCgen(Kraftfahrzeug)
+comment2.params=dneu
+comment2.target=Listenelement amEndeEinf\u00FCgen(Datenelement)
 comment3.params=position
-comment3.target=Knoten getKnoten(int)
+comment3.target=Listenelement getKnoten(int)
 comment4.params=bezeichnung
-comment4.target=Knoten getKnotenByName(java.lang.String)
-comment5.params=bezeichnung
-comment5.target=Knoten getKnotenByNameRecursive(java.lang.String)
-comment6.target=int countKnoten()
-numComments=7
+comment4.target=Listenelement suchen(java.lang.String)
+comment5.target=int getL\u00E4nge()
+comment6.params=dneu
+comment6.target=Listenelement amAnfangEinf\u00FCgen(Datenelement)
+comment7.params=bezeichnung
+comment7.target=void removeElement(java.lang.String)
+numComments=8

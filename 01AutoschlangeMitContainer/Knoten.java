@@ -4,48 +4,46 @@
  * @author Merlin Ortner
  * @version 1.0.2
  */
-public class Knoten {
-    public Knoten nachfolger;
-    public Knoten vorgänger;
-    private Kraftfahrzeug fahrzeug;
+public class Knoten extends Listenelement {
+    public Listenelement nachfolger;
+    private Datenelement data;
 
-    public Knoten(Kraftfahrzeug fahrzeugNeu, Knoten k) {
-        this(fahrzeugNeu, null, k);
+    public Knoten(Datenelement fNeu, Listenelement k) {
+        data = fNeu;
+        nachfolger = k;
     }
 
-    public Knoten(Kraftfahrzeug fahrzeugNeu, Knoten v, Knoten n) {
-        fahrzeug = fahrzeugNeu;
-        vorgänger = v;
+    public Knoten(Datenelement dataNeu, Knoten v, Knoten n) {
+        data = dataNeu;
         nachfolger = n;
-        if (n != null) {
-            n.vorgänger = this; // Rückverweis des Nachfolgers
-        }
     }
 
-    public void amEndeEinfügen(Kraftfahrzeug fneu) {
-        if (nachfolger != null) {
-            nachfolger.amEndeEinfügen(fneu);
-        } else {
-            nachfolger = new Knoten(fneu, this, null);
-        }
+    public Listenelement amEndeEinfügen(Datenelement dneu) {
+        nachfolger = nachfolger.amEndeEinfügen(dneu);
+        return this;
+    }
+
+    public Listenelement suchen(String bezeichnung) {
+        if (data.getBezeichnung().equals(bezeichnung)) return this;
+        return nachfolger.suchen(bezeichnung);
+    }
+
+    public Listenelement getKnoten(int position) {
+        if (position == 0) return this;
+        return nachfolger.getKnoten(position - 1);
     }
     
-    public Knoten getKnotenByNameRecursive(String bezeichnung) {
-        if (fahrzeug.bezeichnung.equals(bezeichnung)) return this;
-        return nachfolger.getKnotenByNameRecursive(bezeichnung);
+    public Listenelement removeElement(String bezeichnung) {
+        if (data.equalsKey(bezeichnung)) return nachfolger;
+        nachfolger = nachfolger.removeElement(bezeichnung);
+        return this;
     }
-    
-    public int countNachfoler() {
-        if (nachfolger != null)
-            return nachfolger.countNachfoler() + 1;
-        else
-            return 1;
-    }
-    
-    public Kraftfahrzeug getKraftfahrzeug() { return fahrzeug; }
-    public Knoten getNachfolger() { return nachfolger; };
-    public Knoten getVorgänger() { return vorgänger; };
-    
+
+    public int getLength(int length) { return nachfolger.getLength(length + 1); }
+
+    public Datenelement getDatenelement() { return data; }
+
+    public Listenelement getNachfolger() { return nachfolger; };
+
     public void ändereNachfolger(Knoten NeuNachfolger) { nachfolger = NeuNachfolger; }
-    public void ändereVorgänger(Knoten NeuVorgänger) { vorgänger = NeuVorgänger; }
 }

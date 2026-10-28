@@ -2,58 +2,29 @@
  * Verkettete Listen
  *
  * @author Merlin Ortner
- * @version 1.1.1
+ * @version 1.2.0
  */
 public class Liste {
-    private Knoten anfang;
-    public int knotenAnzahl = 0;
+    private Listenelement anfang;
 
     public Liste() {
-        anfang = null;
+        anfang = new Abschluss();
     }
-    
-    public void amEndeEinfügen(Kraftfahrzeug fneu) {
-        ++knotenAnzahl;
-        if (anfang != null) {
-            anfang.amEndeEinfügen(fneu);
-        } else {
-            Knoten knotenNeu = new Knoten(fneu, null);
-            anfang = knotenNeu;
-        }
+
+    public Listenelement amEndeEinfügen(Datenelement dneu) { return anfang = anfang.amEndeEinfügen(dneu); }
+
+    public Listenelement getKnoten(int position) { return anfang.getKnoten(position); }
+
+    public Listenelement suchen(String bezeichnung) { return anfang.suchen(bezeichnung); }
+
+    public int getLänge() { return anfang.getLength(0); }
+
+    public Listenelement amAnfangEinfügen(Datenelement dneu) {
+        anfang = new Knoten(dneu, getKnoten(0));
+        return anfang;
     }
-    
-    // public void anPositionEinfügen(Kraftfahrzeug fneu, int position) {
-        // ++knotenAnzahl;
-        // Knoten knotenNeu = new Knoten(fneu, getKnoten(position), getKnoten(position + 1));
-        // getKnoten(position - 1).ändereNachfolger(knotenNeu);
-    // }
-    
-    public Knoten getKnoten(int position) {
-        Knoten knoten = anfang;
-        for (int i = 0; i < position; ++i) {
-            knoten = knoten.getNachfolger();
-            if (knoten == null) return null;
-        }
-        return knoten;
-    }
-    
-    public Knoten getKnotenByName(String bezeichnung) {
-        Knoten aktuellerKnoten = anfang;
-        while (aktuellerKnoten.getNachfolger() != null) {
-            if (aktuellerKnoten.getKraftfahrzeug().bezeichnung.equals(bezeichnung))
-                return aktuellerKnoten;
-            else
-                aktuellerKnoten = aktuellerKnoten.getNachfolger();
-        }
-        return null;
-    }
-    
-    public Knoten getKnotenByNameRecursive(String bezeichnung) {
-        return anfang.getKnotenByNameRecursive(bezeichnung);
-    }
-    
-    public int countKnoten() {
-        if (anfang == null) return 0;
-        return anfang.countNachfoler();
+
+    public void removeElement(String bezeichnung) {
+        anfang = anfang.removeElement(bezeichnung);
     }
 }

@@ -21,7 +21,6 @@ public class SportsCar extends Kraftfahrzeug {
     private int scale;
 
     private final String lightToneName, darkToneName, helmetToneName;
-
     // Gives every instance its own StaticTools color-name namespace,
     // so two cars on the field never overwrite each other's colors.
     private static int instanceCounter = 0;

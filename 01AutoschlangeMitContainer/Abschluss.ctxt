@@ -1,0 +1,13 @@
+#BlueJ class context
+#Wed Oct 28 09:29:19 CET 2026
+comment0.target=Abschluss
+comment0.text=\n Write a description of class Abschluss here.\n\n @author Merlin Ortner\n @version 1.0.0\n
+comment1.params=bezeichnung
+comment1.target=Listenelement suchen(java.lang.String)
+comment2.params=position
+comment2.target=Listenelement getKnoten(int)
+comment3.params=dneu
+comment3.target=Knoten amEndeEinf\u00FCgen(Datenelement)
+comment4.params=length
+comment4.target=int getLength(int)
+numComments=5
